@@ -1,3 +1,5 @@
+[![Staging Checks](https://github.com/PyConColombia/website-template/actions/workflows/develop.yml/badge.svg?branch=dev)](https://github.com/PyConColombia/website-template/actions/workflows/develop.yml)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
