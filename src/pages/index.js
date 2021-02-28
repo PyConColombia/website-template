@@ -4,7 +4,6 @@ import { useIntl } from 'gatsby-plugin-intl';
 
 const IndexPage = () => {
   const intl = useIntl();
-  const locale = intl.locale !== 'es' ? `/${intl.locale}` : '';
 
   return (
     <>
