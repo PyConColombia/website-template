@@ -32,7 +32,7 @@ jobs:
       - name: Install node dependencies
         run: |
           cd pycon-website-template/
-          npm install --only=dev
+          npm install
       - name: Show node environment
         run: |
           node --version
