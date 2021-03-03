@@ -3,5 +3,25 @@
  *
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
-
-// You can delete this file if you're not using it
+exports.createPages = async function({actions,graphql}) {
+  const { data } = await graphql(`
+    query {
+        allSpeakersJson {
+            nodes {
+              description
+              id
+              image
+              name
+              price
+            }
+          }
+    }`)
+    
+    data.allSpeakersJson.nodes.forEach((node) => {
+        actions.createPage({
+            path: `/speakers/${node.id}`,
+            component: require.resolve(`./src/templates/speaker.js`),
+            context: { speakerID: node.id },
+        })
+    });
+}
