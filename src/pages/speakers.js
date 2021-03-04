@@ -1,4 +1,5 @@
 import React from 'react';
+import Proptypes from 'prop-types';
 import { graphql, Link } from 'gatsby';
 
 export const query = graphql`
@@ -25,6 +26,10 @@ const SpeakersPage = ({ data }) => {
       </ul>
     </div>
   );
+};
+
+SpeakersPage.propTypes = {
+  data: Proptypes.object,
 };
 
 export default SpeakersPage;

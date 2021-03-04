@@ -1,4 +1,5 @@
 import React from 'react';
+import Proptypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 export const query = graphql`
@@ -22,4 +23,9 @@ const Speaker = ({ data }) => {
     </div>
   );
 };
+
+Speaker.propTypes = {
+  data: Proptypes.object,
+};
+
 export default Speaker;
