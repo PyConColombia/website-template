@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Link } from 'gatsby';
 import { useIntl } from 'gatsby-plugin-intl';
 
@@ -18,7 +18,6 @@ const IndexPage = () => {
           <li>
             <Link to="/speakers">Speakers</Link>
           </li>
-
         </ul>
       </ul>
       <h1>{intl.formatMessage({ id: 'index.title' })}</h1>

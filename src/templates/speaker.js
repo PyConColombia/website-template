@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 
 export const query = graphql`
   query($speakerID: String!) {
-    speakersJson(id: {eq : $speakerID } ) {
+    speakersJson(id: { eq: $speakerID }) {
       description
       id
       image
@@ -14,10 +14,11 @@ export const query = graphql`
 `;
 
 const Speaker = ({ data }) => {
+  const { speakersJson } = data;
+
   return (
     <div>
-      {' '}
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      {console.log(data)} <pre>{JSON.stringify(speakersJson, null, 2)}</pre>
     </div>
   );
 };
