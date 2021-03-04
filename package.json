@@ -14,6 +14,7 @@
     "gatsby-plugin-react-helmet": "^3.10.0",
     "gatsby-plugin-sharp": "^2.14.3",
     "gatsby-source-filesystem": "^2.11.1",
+    "gatsby-transformer-json": "^3.0.0",
     "gatsby-transformer-sharp": "^2.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -21,6 +22,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
@@ -39,8 +41,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby clean && gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "lint": "eslint --fix .",
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.+(js|jsx|json)\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -57,10 +59,5 @@
     "hooks": {
       "pre-commit": "npm run lint && npm run format"
     }
-  },
-  "lint-staged": {
-    "./**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix"
-    ]
   }
 }

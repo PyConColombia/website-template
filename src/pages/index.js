@@ -15,6 +15,9 @@ const IndexPage = () => {
           <li>
             <Link to="/">Es</Link>
           </li>
+          <li>
+            <Link to="/speakers">Speakers</Link>
+          </li>
         </ul>
       </ul>
       <h1>{intl.formatMessage({ id: 'index.title' })}</h1>
