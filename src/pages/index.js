@@ -2,11 +2,13 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { useIntl } from 'gatsby-plugin-intl';
 
+import Layout from '../components/layout';
+
 const IndexPage = () => {
   const intl = useIntl();
 
   return (
-    <>
+    <Layout>
       <ul>
         <ul>
           <li>
@@ -21,7 +23,7 @@ const IndexPage = () => {
         </ul>
       </ul>
       <h1>{intl.formatMessage({ id: 'index.title' })}</h1>
-    </>
+    </Layout>
   );
 };
 
