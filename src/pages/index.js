@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 import { useIntl } from 'gatsby-plugin-intl';
 import Proptypes from 'prop-types';
 
 import Layout from '../components/layout';
 import { Container } from 'react-bootstrap';
-const IndexPage = ({ data }) => {
+const IndexPage = () => {
   const intl = useIntl();
   //   const speakers = data.allSpeakersJson.nodes;
   // console.log(speakers);
@@ -35,15 +35,15 @@ IndexPage.propTypes = {
   data: Proptypes.object,
 };
 
-export const query = graphql`
-  query SpeakersPosts {
-    allSpeakersJson {
-      nodes {
-        id
-        name
-        node_locale
-      }
-    }
-  }
-`;
+// export const query = graphql`
+//   query SpeakersPosts {
+//     allSpeakersJson {
+//       nodes {
+//         id
+//         name
+//         node_locale
+//       }
+//     }
+//   }
+// `;
 export default IndexPage;

@@ -29,8 +29,9 @@ const Language = ({ intl }) => {
             <NavDropdown.Item
               key={language}
               onClick={(e) => languageClick(e, language)}
-              //   style={{
-              //     color: currentLocale === language ? `yellow` : `white`,
+              style={{
+                color: currentLocale === language ? `yellow` : `black`,
+              }}
               //     margin: 10,
               //     textDecoration: `underline`,
               //     cursor: `pointer`,

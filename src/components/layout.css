@@ -18,6 +18,12 @@ body {
   -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  background: url(../images/background.webp) top center repeat-y;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+a {
+  text-decoration: none;
 }
 .navbar {
   background-image: linear-gradient(
@@ -25,4 +31,17 @@ body {
     rgba(255, 255, 255, 0),
     rgba(255, 255, 255, 0.4)
   );
+}
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.navbar_a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.cfp {
+  background-color: #fff;
+  border-radius: 25px;
+}
+.cfp a {
+  color: #4706a0 !important;
 }

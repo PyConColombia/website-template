@@ -12,7 +12,7 @@ const SiteBar = ({ intl }) => {
       collapseOnSelect
       className="navbar"
       expand="lg"
-      bg="light"
+      // bg="light"
       variant="light"
       fixed="top"
     >
@@ -22,32 +22,33 @@ const SiteBar = ({ intl }) => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#features">
-            <Link to="/resources">
+          <Nav.Link as="h6">
+            <Link to="/resources" className="navbar_a">
               {intl.formatMessage({ id: 'navbar.resources' })}
             </Link>
           </Nav.Link>
           <NavDropdown
             title={intl.formatMessage({ id: 'navbar.schedule.main' })}
             id="collasible-nav-dropdown"
+            className="navbar_a"
           >
-            <NavDropdown.Item>
+            <NavDropdown.Item as="h6">
               <Link to="/schedule">
                 {intl.formatMessage({ id: 'navbar.schedule.op1' })}
               </Link>
             </NavDropdown.Item>
-            <NavDropdown.Item>
+            <NavDropdown.Item as="h6">
               <Link to="/keynotes">
                 {intl.formatMessage({ id: 'navbar.schedule.op2' })}
               </Link>
             </NavDropdown.Item>
-            <NavDropdown.Item>
+            <NavDropdown.Item as="h6">
               <Link to="/speakers">
                 {intl.formatMessage({ id: 'navbar.schedule.op3' })}
               </Link>
             </NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link>
+          <Nav.Link as="h6" className="cfp">
             <Link to="/cfp">
               {intl.formatMessage({ id: 'navbar.proposals' })}
             </Link>
