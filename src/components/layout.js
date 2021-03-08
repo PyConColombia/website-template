@@ -7,17 +7,17 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container } from 'react-bootstrap';
-
+// import { Container } from 'react-bootstrap';
 import SiteBar from './SiteBar';
+import './layout.css';
 
 const Layout = ({ children }) => {
   return (
     <>
-      <SiteBar />
-      <Container>
-        <main>{children}</main>
-      </Container>
+      <header>
+        <SiteBar />
+      </header>
+      <main>{children}</main>
       <footer
         style={{
           marginTop: `2rem`,
