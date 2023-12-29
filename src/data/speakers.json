@@ -1,0 +1,34 @@
+[
+  {
+    "id": "john-doe",
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "bYQJ9@example.com",
+    "photo": "https://i.pravatar.cc/300",
+    "biography": "I am John Doe. I am an amazing speaker.",
+    "affiliation": "Acme Inc.",
+    "facebook": "https://www.facebook.com/johndoe",
+    "twitter": "@johndoe",
+    "linkedin": "https://www.linkedin.com/in/johndoe",
+    "github": "https://github.com/johndoe",
+    "website": "https://johndoe.com",
+    "country_origin": "USA",
+    "country_residence": "USA"
+  },
+  {
+    "id": "jane-doe",
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "email": "bYQJ9@example.com",
+    "photo": "https://i.pravatar.cc/300",
+    "biography": "I am Jane Doe. I am an amazing speaker.",
+    "affiliation": "Acme Inc.",
+    "facebook": "https://www.facebook.com/johndoe",
+    "twitter": "@johndoe",
+    "linkedin": "https://www.linkedin.com/in/johndoe",
+    "github": "https://github.com/janedenoe",
+    "website": "https://janedenoe.com",
+    "country_origin": "Colombia",
+    "country_residence": "Canada"
+  }
+]

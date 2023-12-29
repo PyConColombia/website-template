@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "This is the title",
+    "speakers": [
+      "john-doe"
+    ],
+    "written_language": "English",
+    "spoken_language": "English",
+    "submission": "Talk",
+    "description": "This is the description",
+    "summary": "This is the summary",
+    "tags": [
+      "tag1",
+      "tag2"
+    ],
+    "video_url": "https://www.youtube.com/watch?v=123"
+  },
+  {
+    "id": 2,
+    "title": "This is the title",
+    "speakers": [
+      "john-doe",
+      "jane-doe"
+    ],
+    "written_language": "English",
+    "spoken_language": "Spanish",
+    "submission": "Workshop",
+    "description": "This is the description",
+    "summary": "This is the summary",
+    "tags": [
+      "tag1"
+    ]
+  }
+]
