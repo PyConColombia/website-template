@@ -1,17 +1,27 @@
+'use client';
+
 import React from 'react';
 import props from 'prop-types';
+import NavbarCustom from '@/app/[lang]/components/NavbarCustom';
+import { I18nContext } from '@/contexts/I18nContext';
 
-export async function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'es' }];
-}
+import '@/styles/App.sass';
+import { getI18nDictionary } from './dictionaries';
 
-export default function Root({ children, params }) {
+const Root = async ({ children, params }) => {
+  const i18nDictionary = await getI18nDictionary(params.lang);
+
   return (
-    <html lang={params.lang}>
-      <body>{children}</body>
-    </html>
+    <I18nContext.Provider value={i18nDictionary}>
+      <html lang={params.lang}>
+        <body>
+          <NavbarCustom lang={params.lang} />
+          {children}
+        </body>
+      </html>
+    </I18nContext.Provider>
   );
-}
+};
 
 Root.propTypes = {
   children: props.node.isRequired,
@@ -19,3 +29,5 @@ Root.propTypes = {
     lang: props.string.isRequired
   }).isRequired
 };
+
+export default Root;

@@ -1,4 +1,9 @@
 {
+  "navbar": {
+    "home": "Main",
+    "speakers": "Speakers",
+    "talks": "Talks"
+  },
   "products": {
     "cart": "Add to Cart"
   }

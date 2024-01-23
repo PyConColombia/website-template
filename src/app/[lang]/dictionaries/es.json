@@ -1,4 +1,9 @@
 {
+  "navbar": {
+    "home": "Inicio",
+    "speakers": "Oradores",
+    "talks": "Charlas"
+  },
   "products": {
     "cart": "Agregar al carro"
   }
