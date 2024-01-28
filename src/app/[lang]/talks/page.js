@@ -8,7 +8,7 @@ const Talks = ({ params: { lang } }) => {
     <main>
       {talksList.map((talk) => (
         <Link key={talk.id} href={`./talks/${talk.id}`} locale={lang}>
-          <h1>{talk.title}</h1>
+          <h1>{talk.title[lang]}</h1>
         </Link>
       ))}
     </main>

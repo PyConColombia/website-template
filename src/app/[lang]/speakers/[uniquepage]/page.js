@@ -59,13 +59,11 @@ const Speaker = ({ params: { uniquepage, lang } }) => {
           </Link>
         </li>
       </ul>
-      <p>{speaker.biography}</p>
-
+      {speaker.biography ? <p>{speaker.biography[lang]}</p> : null}
       <h3>Talks</h3>
-
       {talks.map((talk) => (
         <Link key={talk.id} href={`/talks/${talk.id}`} locale={lang}>
-          <h1>{talk.title}</h1>
+          <h1>{talk.title[lang]}</h1>
         </Link>
       ))}
     </>

@@ -1,15 +1,24 @@
 [
   {
     "id": 1,
-    "title": "This is the title",
+    "title": {
+      "en": "This is the title",
+      "es": "Este es el titulo"
+    },
     "speakers": [
       "john-doe"
     ],
     "written_language": "English",
     "spoken_language": "English",
     "submission": "Talk",
-    "description": "This is the description",
-    "summary": "This is the summary",
+    "description": {
+      "en": "This is the description",
+      "es": "Esta es la descripción"
+    },
+    "summary": {
+      "en": "This is the summary",
+      "es": "Este es el resumen"
+    },
     "tags": [
       "tag1",
       "tag2"
@@ -18,7 +27,10 @@
   },
   {
     "id": 2,
-    "title": "This is the title",
+    "title": {
+      "en": "This is the title",
+      "es": "Este es el titulo"
+    },
     "speakers": [
       "john-doe",
       "jane-doe"
@@ -26,8 +38,14 @@
     "written_language": "English",
     "spoken_language": "Spanish",
     "submission": "Workshop",
-    "description": "This is the description",
-    "summary": "This is the summary",
+    "description": {
+      "en": "This is the description",
+      "es": "Esta es la descripción"
+    },
+    "summary": {
+      "en": "This is the summary",
+      "es": "Este es el resumen"
+    },
     "tags": [
       "tag1"
     ]

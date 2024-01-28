@@ -5,7 +5,10 @@
     "last_name": "Doe",
     "email": "bYQJ9@example.com",
     "photo": "https://i.pravatar.cc/300",
-    "biography": "I am John Doe. I am an amazing speaker.",
+    "biography": {
+      "en": "I am John Doe. I am an amazing speaker.",
+      "es": "Yo soy John Doe. Soy un gran orador."
+    },
     "affiliation": "Acme Inc.",
     "facebook": "https://www.facebook.com/johndoe",
     "twitter": "@johndoe",
@@ -21,7 +24,10 @@
     "last_name": "Doe",
     "email": "bYQJ9@example.com",
     "photo": "https://i.pravatar.cc/300",
-    "biography": "I am Jane Doe. I am an amazing speaker.",
+    "biography": {
+      "en": "I am Jane Doe. I am an amazing speaker.",
+      "es": "Yo soy Jane Doe. Soy un gran orador."
+    },
     "affiliation": "Acme Inc.",
     "facebook": "https://www.facebook.com/johndoe",
     "twitter": "@johndoe",

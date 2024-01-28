@@ -9,7 +9,7 @@ export async function generateStaticParams() {
   }));
 }
 
-const UniquePage = ({ params: { uniquepage } }) => {
+const UniquePage = ({ params: { uniquepage, lang } }) => {
   const talk = talksList.find((p) => p.id.toString() === uniquepage);
 
   if (!talk) {
@@ -19,12 +19,12 @@ const UniquePage = ({ params: { uniquepage } }) => {
 
   return (
     <>
-      <h1>{talk.title}</h1>
+      {talk.title ? <h1>{talk.title[lang]}</h1> : null}
 
       <iframe
         src="https://www.youtube.com/embed/3YxneS1eyfM"
         frameBorder="0"
-        allowfullScreen=""
+        allowFullScreen=""
         className="video"></iframe>
       <hr />
 
@@ -38,16 +38,21 @@ const UniquePage = ({ params: { uniquepage } }) => {
         ))}
       </ul>
 
-      <p>{talk.description}</p>
+      {talk.description ? <p>{talk.description[lang]}</p> : null}
 
-      <h2>Summary</h2>
-      <p>{talk.summary}</p>
+      {talk.summary ? (
+        <>
+          <h2>Summary</h2>
+          <p>{talk.summary[lang]}</p>
+        </>
+      ) : null}
     </>
   );
 };
 
 UniquePage.propTypes = {
   params: propTypes.shape({
+    lang: propTypes.string.isRequired,
     uniquepage: propTypes.string.isRequired
   }).isRequired
 };
