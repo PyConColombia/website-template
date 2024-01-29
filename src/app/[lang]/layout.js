@@ -2,6 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import props from 'prop-types';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import NavbarCustom from '@/app/[lang]/components/NavbarCustom';
 import { I18nContext } from '@/contexts/I18nContext';
 
@@ -24,7 +27,13 @@ const Root = ({ children, params: { lang } }) => {
       <html lang={lang}>
         <body>
           <NavbarCustom lang={lang} />
-          {children}
+          <main>
+            <Container>
+              <Row className="justify-content-md-center">
+                <Col lg={10}>{children}</Col>
+              </Row>
+            </Container>
+          </main>
         </body>
       </html>
     </I18nContext.Provider>

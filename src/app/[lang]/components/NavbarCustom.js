@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter, useSelectedLayoutSegments } from 'next/navigation';
 import Link from 'next/link';
 import propTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
@@ -15,10 +15,10 @@ import { locales } from '@/utils/locale';
 const NavbarCustom = ({ lang }) => {
   const i18nDictionary = useI18n();
   const router = useRouter();
-  const pathname = usePathname();
+  const urlSegments = useSelectedLayoutSegments();
 
   const onChangeLocale = (locale) => {
-    router.replace(pathname, { locale });
+    router.replace(`/${locale}/${urlSegments.join('/')}`);
   };
 
   return (
@@ -54,16 +54,13 @@ const NavbarCustom = ({ lang }) => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <NavDropdown
-              title={lang}
-              id="collapsible-nav-dropdown"
-              onChange={(e) => onChangeLocale(e.target.value)}>
+            <NavDropdown title={lang} id="collapsible-nav-dropdown" onSelect={onChangeLocale}>
               {locales.map(
                 (locale) =>
                   locale !== lang && (
-                    <Nav.Link as={Link} key={locale} href={`/${locale}`}>
+                    <NavDropdown.Item key={locale} eventKey={locale}>
                       {locale}
-                    </Nav.Link>
+                    </NavDropdown.Item>
                   )
               )}
             </NavDropdown>

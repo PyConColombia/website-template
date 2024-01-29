@@ -15,15 +15,15 @@ const Speakers = ({ params: { lang } }) => {
     <>
       {speakerslist.map(
         (speaker) =>
-          speaker.type === 'speaker' && (
+          speaker.type === 'keynote' && (
             <Row key={speaker.id}>
               <Col md={4}>
-                <Link href={`/${lang}/speakers/${speaker.id}`} locale={lang}>
+                <Link href={`/keynotes/${speaker.id}`} locale={lang}>
                   <Image src={Avatar} width={200} height={200} alt="Picture of the author" />
                 </Link>
               </Col>
               <Col md={8}>
-                <Link href={`/${lang}/speakers/${speaker.id}`} locale={lang}>
+                <Link href={`/keynotes/${speaker.id}`} locale={lang}>
                   <h1>
                     {speaker.first_name} {speaker.last_name}
                   </h1>
