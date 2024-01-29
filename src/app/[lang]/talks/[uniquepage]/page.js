@@ -13,7 +13,6 @@ const UniquePage = ({ params: { uniquepage, lang } }) => {
   const talk = talksList.find((p) => p.id.toString() === uniquepage);
 
   if (!talk) {
-    console.log('talk not found');
     notFound();
   }
 

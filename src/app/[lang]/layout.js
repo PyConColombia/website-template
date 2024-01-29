@@ -12,7 +12,6 @@ const Root = ({ children, params: { lang } }) => {
   const [i18nDictionary, setI18n] = useState({});
 
   useEffect(() => {
-    console.log('lang', lang);
     const getI18n = async () => {
       setI18n(await getI18nDictionary(lang));
     };

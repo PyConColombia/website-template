@@ -1,4 +1,5 @@
-const locales = ['en', 'es'];
+import { locales } from '@/utils/locale';
+
 const preferredLocale = 'en';
 
 export function middleware(request) {

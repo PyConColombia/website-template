@@ -1,10 +1,11 @@
 {
   "navbar": {
     "home": "Inicio",
-    "speakers": "Oradores",
-    "talks": "Charlas"
-  },
-  "products": {
-    "cart": "Agregar al carro"
+    "keynotes": "Invitados Internacionales",
+    "resources": "Recursos",
+    "schedule": "Cronograma",
+    "speakers": "Ponentes",
+    "talks": "Ponencias",
+    "team": "Equipo"
   }
 }

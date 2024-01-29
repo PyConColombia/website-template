@@ -1,10 +1,11 @@
 {
   "navbar": {
     "home": "Main",
+    "keynotes": "Keynotes",
+    "resources": "Resources",
+    "schedule": "Schedule",
     "speakers": "Speakers",
-    "talks": "Talks"
-  },
-  "products": {
-    "cart": "Add to Cart"
+    "talks": "Talks",
+    "team": "Team"
   }
 }
