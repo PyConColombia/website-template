@@ -1,9 +1,5 @@
 import React from 'react';
 
 export default async function Page({ lang }) {
-  return (
-    <>
-      <button>test</button>
-    </>
-  );
+  return <h1>PyCon Colombia</h1>;
 }
