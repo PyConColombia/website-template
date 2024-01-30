@@ -22,11 +22,15 @@ const NavbarCustom = ({ lang }) => {
   };
 
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar
+      sticky="top"
+      bg="dark"
+      data-bs-theme="dark"
+      collapseOnSelect
+      expand="md"
+      className="navbar-main">
       <Container>
-        <Navbar.Brand as={Link} href={`/${lang}`}>
-          PyCon Colombia
-        </Navbar.Brand>
+        <Navbar.Brand as={Link} href={`/${lang}`}></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
