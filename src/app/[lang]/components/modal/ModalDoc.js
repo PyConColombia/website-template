@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import Modal from 'react-bootstrap/Modal';
 
 const ModalDocFooter = ({ title, url }) => {
@@ -22,6 +23,11 @@ const ModalDocFooter = ({ title, url }) => {
       </Modal>
     </>
   );
+};
+
+ModalDocFooter.propTypes = {
+  title: PropTypes.string,
+  url: PropTypes.string
 };
 
 export default ModalDocFooter;

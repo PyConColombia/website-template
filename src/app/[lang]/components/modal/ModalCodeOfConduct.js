@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Modal from 'react-bootstrap/Modal';
 
 const ModalCodeOfConduct = ({ show, handleClose }) => {
@@ -81,6 +82,11 @@ const ModalCodeOfConduct = ({ show, handleClose }) => {
       </Modal.Body>
     </Modal>
   );
+};
+
+ModalCodeOfConduct.propTypes = {
+  show: PropTypes.bool.isRequired,
+  handleClose: PropTypes.func.isRequired
 };
 
 export default ModalCodeOfConduct;

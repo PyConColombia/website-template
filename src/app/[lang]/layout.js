@@ -8,6 +8,7 @@ import { I18nContext } from '@/contexts/I18nContext';
 
 import '@/styles/styles.sass';
 import { getI18nDictionary } from '@/data/dictionaries';
+import FooterLayout from './components/FooterLayout';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -31,6 +32,7 @@ const Root = ({ children, params: { lang } }) => {
         <body className={poppins.className}>
           <NavbarCustom lang={lang} />
           <main>{children}</main>
+          <FooterLayout />
         </body>
       </html>
     </I18nContext.Provider>

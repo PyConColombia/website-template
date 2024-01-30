@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-// import { StaticImage } from 'gatsby-plugin-image';
+import Image from 'next/image';
 import { validateEmail } from '@/utils/fields';
 
 const Contact = () => {
@@ -87,7 +87,9 @@ const Contact = () => {
       <div id="form-wrapper">
         <Container fluid>
           <Row>
-            <Col xs={12} md={4} className="d-none d-sm-none d-md-block"></Col>
+            <Col xs={12} md={4} className="d-none d-sm-none d-md-block">
+              <Image src="/images/contact/1.svg" alt="Contact Icons" width={300} height={300} />
+            </Col>
             <Col xs={12} md={4} className="justify-content-center">
               <div id="form-container">
                 <h2 className="title">Want to know more?</h2>
@@ -134,7 +136,9 @@ const Contact = () => {
                 </Form>
               </div>
             </Col>
-            <Col xs={12} md={4} className="d-none d-sm-none d-md-block"></Col>
+            <Col xs={12} md={4} className="d-none d-sm-none d-md-block">
+              <Image src="/images/contact/2.svg" alt="Contact Icons" width={300} height={300} />
+            </Col>
           </Row>
         </Container>
       </div>

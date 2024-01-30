@@ -7,7 +7,10 @@ export function middleware(request) {
   const { pathname } = request.nextUrl;
 
   const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+    (locale) =>
+      pathname.startsWith(`/${locale}/`) ||
+      pathname === `/${locale}` ||
+      pathname.startsWith(`/images/`)
   );
 
   if (pathnameHasLocale) return;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Modal from 'react-bootstrap/Modal';
 
 const HealthPolicy = ({ show, handleClose }) => {
@@ -10,11 +11,11 @@ const HealthPolicy = ({ show, handleClose }) => {
       <Modal.Body>
         <br />
         <p>
-          Our attendees' health and safety remain our top priority as we continue to monitor the
-          state of the pandemic and look to venue, local, and CDC guidelines to make the best and
-          most informed decisions around onsite safety and requirements. Python Colombia has worked
-          hard to be a community that is welcoming to all so we will be erring on the side of safety
-          for all participants.
+          Our attendees&apos; health and safety remain our top priority as we continue to monitor
+          the state of the pandemic and look to venue, local, and CDC guidelines to make the best
+          and most informed decisions around onsite safety and requirements. Python Colombia has
+          worked hard to be a community that is welcoming to all so we will be erring on the side of
+          safety for all participants.
         </p>
         <br />
         <p>
@@ -27,6 +28,11 @@ const HealthPolicy = ({ show, handleClose }) => {
       </Modal.Body>
     </Modal>
   );
+};
+
+HealthPolicy.propTypes = {
+  show: PropTypes.bool,
+  handleClose: PropTypes.func
 };
 
 export default HealthPolicy;

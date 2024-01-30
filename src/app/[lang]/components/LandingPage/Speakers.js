@@ -1,5 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
+import Image from 'next/image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -12,7 +13,7 @@ const Speakers = () => {
       <Container>
         <Row>
           <Col xs={12} md={3}>
-            <StaticImage src="../../static/images/carousel.svg" alt="Carousel" />
+            <Image src="/images/carousel.svg" alt="Carousel" width={300} height={300} />
           </Col>
           <Col xs={12} md={7}>
             <Row>

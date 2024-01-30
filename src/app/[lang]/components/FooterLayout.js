@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby';
+import Link from 'next/link';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -13,7 +13,7 @@ import {
   faYoutube,
   faGithubAlt
 } from '@fortawesome/free-brands-svg-icons';
-import { StaticImage } from 'gatsby-plugin-image';
+import Image from 'next/image';
 import ModalDocFooter from './modal/ModalDoc';
 import ModalCodeOfConduct from './modal/ModalCodeOfConduct';
 import ModalCodeOfConductE from './modal/ModalCodeOfConductE';
@@ -73,7 +73,12 @@ const FooterLayout = () => {
           <Row>
             <Col xs={12} md={12} lg={5} className="footer-column">
               <div className="logo">
-                <StaticImage src="../static/images/pycon-logo.svg" alt="PyCon Colombia logo" />
+                <Image
+                  src="/images/pycon-logo.svg"
+                  alt="PyCon Colombia logo"
+                  width={300}
+                  height={300}
+                />
               </div>
             </Col>
             <Col xs={12} md={6} lg={3} className="footer-column">
@@ -100,7 +105,7 @@ const FooterLayout = () => {
               <div className="footer-separator"></div>
               <ul>
                 <li>
-                  <Link to="mailto:hello@pycon.co">hello@pycon.co</Link>
+                  <Link href="mailto:hello@pycon.co">hello@pycon.co</Link>
                 </li>
               </ul>
 

@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import Button from 'react-bootstrap/Button';
-// import { StaticImage } from 'gatsby-plugin-image';
+import Image from 'next/image';
 
 const Welcome = () => {
   return (
@@ -17,6 +17,12 @@ const Welcome = () => {
                   <span className="bold">Del 7 al 9 de Junio |</span>
                   <span> Medellín - Colombia</span>
                 </h2>
+                <Image
+                  src="/images/pycon-logo.svg"
+                  alt="PyCon Colombia logo"
+                  width={300}
+                  height={300}
+                />
               </div>
             </Col>
           </Row>

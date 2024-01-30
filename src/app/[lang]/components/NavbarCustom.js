@@ -3,6 +3,7 @@
 import React from 'react';
 import { useRouter, useSelectedLayoutSegments } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import propTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -30,11 +31,13 @@ const NavbarCustom = ({ lang }) => {
       expand="md"
       className="navbar-main">
       <Container>
-        <Navbar.Brand as={Link} href={`/${lang}`}></Navbar.Brand>
+        <Navbar.Brand as={Link} href={`/${lang}`}>
+          <Image src="/images/logo.svg" alt="logo" width={40} height={40} />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} href={`/${lang}/resources`}>
+            <Nav.Link as={Link} href={`/${lang}/resources`} className="nav-item">
               {i18nDictionary?.navbar?.resources}
             </Nav.Link>
             <NavDropdown title={i18nDictionary?.navbar?.schedule} id="collapsible-nav-dropdown">
@@ -53,7 +56,7 @@ const NavbarCustom = ({ lang }) => {
                 {i18nDictionary?.navbar?.talks}
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} href={`/${lang}/team`}>
+            <Nav.Link as={Link} href={`/${lang}/team`} className="nav-item">
               {i18nDictionary?.navbar?.team}
             </Nav.Link>
           </Nav>

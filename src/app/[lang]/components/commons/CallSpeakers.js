@@ -3,8 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-// import { StaticImage } from 'gatsby-plugin-image';
-// import { Link } from 'gatsby-plugin-react-i18next';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const CallSpeakers = () => {
   return (
@@ -13,7 +13,9 @@ const CallSpeakers = () => {
         <div className="content">
           <Container>
             <Row className="justify-content-center">
-              <Col xs={12} md={2} lg={2} className="d-none d-sm-none d-lg-block"></Col>
+              <Col xs={12} md={2} lg={2} className="d-none d-sm-none d-lg-block">
+                <Image src="/images/megaphone.webp" width={300} height={300} className="logo" />
+              </Col>
               <Col xs={12} md={6} lg={5}>
                 <div className="text">
                   <h1>Call for proposals</h1>
@@ -21,7 +23,9 @@ const CallSpeakers = () => {
                     Would you like to submit a proposal to participate in PYCON 24? We have topics
                     such as data science, machine learning, web development, and much more.
                   </p>
-                  <p className="description">Detailed information and FAQ here.</p>
+                  <p className="description">
+                    Detailed information and FAQ <Link href="/call-for-proposals">here</Link>.
+                  </p>
                   <Button
                     variant="primary"
                     href="https://docs.google.com/forms/d/e/1FAIpQLSelYKA6txm_uTmpgqydOYw27uKwaY701Vy4qJac1NCzYFq7Ow/viewform"
