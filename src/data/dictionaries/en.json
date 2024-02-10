@@ -1,0 +1,11 @@
+{
+  "navbar": {
+    "home": "Main",
+    "keynotes": "Keynotes",
+    "resources": "Resources",
+    "schedule": "Schedule",
+    "speakers": "Speakers",
+    "talks": "Talks",
+    "team": "Team"
+  }
+}

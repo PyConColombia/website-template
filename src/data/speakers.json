@@ -1,35 +1,42 @@
 [
-    {
-      "id": "1",
-      "name": "Thermaltake CA-1D4-00S1NN-00 Versa H15 mATX Case",
-      "description": "Thermaltake new Versa H15 micro case is ideal for home-computer builders and gamers, creating enough space for high-end hardware and expansion. The ample ventilation options, cleanable air filter, and a perforated mesh bezel help to keep the entire system cool and dust-free. Versa H15 combines a manageable frame size with extensive options to customize user s computer or gaming system.",
-      "image": "https://s.yimg.com/aah/outletpc/thermaltake-ca-1d4-00s1nn-00-versa-h15-matx-case-162.jpg",
-      "price": "61.88",
-      "node_locale" : "en"
+  {
+    "id": "john-doe",
+    "type": "speaker",
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "bYQJ9@example.com",
+    "photo": "https://i.pravatar.cc/300",
+    "biography": {
+      "en": "I am John Doe. I am an amazing speaker.",
+      "es": "Yo soy John Doe. Soy un gran orador."
     },
-    {
-      "id": "3",
-      "name": "Thermaltake CA-1D4-00S1NN-00 Versa H15 mATX Case",
-      "description": "Thermaltake new Versa H15 micro case is ideal for home-computer builders and gamers, creating enough space for high-end hardware and expansion. The ample ventilation options, cleanable air filter, and a perforated mesh bezel help to keep the entire system cool and dust-free. Versa H15 combines a manageable frame size with extensive options to customize user s computer or gaming system.",
-      "image": "https://s.yimg.com/aah/outletpc/thermaltake-ca-1d4-00s1nn-00-versa-h15-matx-case-162.jpg",
-      "price": "61.88",
-      "node_locale" : "es"
+    "affiliation": "Acme Inc.",
+    "facebook": "https://www.facebook.com/johndoe",
+    "twitter": "@johndoe",
+    "linkedin": "https://www.linkedin.com/in/johndoe",
+    "github": "https://github.com/johndoe",
+    "website": "https://johndoe.com",
+    "country_origin": "USA",
+    "country_residence": "USA"
+  },
+  {
+    "id": "jane-doe",
+    "type": "keynote",
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "email": "bYQJ9@example.com",
+    "photo": "https://i.pravatar.cc/300",
+    "biography": {
+      "en": "I am Jane Doe. I am an amazing speaker.",
+      "es": "Yo soy Jane Doe. Soy un gran orador."
     },
-    {
-      "id": "2",
-      "name": "Western Digital WD10EZEX",
-      "description": "Western Digital 1TB WD10EZEX Caviar Blue 3.5 inch 7200rpm internal hard drive. With this drive you get the capacity and the performance you demand to build a high speed, high capacity modern desktop computer. The WD Blue 1tb gives your system the storage it needs and the speed you want - with 1 terabyte of capacity to store all your files, videos, and pictures. Features 64MB cache and a 3.5 inch form factor. This 1 TB SATA HDD has the room you need to store gigabytes upon gigabytes of high definition media, and the read and write speeds to easily access and manage it all.",
-      "image": "https://s.yimg.com/aah/outletpc/western-digital-wd10ezex-1tb-sata-iii-3-5-desktop-hard-drive-58.jpg",
-      "price": "43.99",
-      "node_locale" : "en"
-    },
-    
-    {
-      "id": "4",
-      "name": "Western Digital WD10EZEX 1TB Blue 7200RPM SATA 6.0Gb/s 3.5inch Hard Drive",
-      "description": "Western Digital 1TB WD10EZEX Caviar Blue 3.5 inch 7200rpm internal hard drive. With this drive you get the capacity and the performance you demand to build a high speed, high capacity modern desktop computer. The WD Blue 1tb gives your system the storage it needs and the speed you want - with 1 terabyte of capacity to store all your files, videos, and pictures. Features 64MB cache and a 3.5 inch form factor. This 1 TB SATA HDD has the room you need to store gigabytes upon gigabytes of high definition media, and the read and write speeds to easily access and manage it all.",
-      "image": "https://s.yimg.com/aah/outletpc/western-digital-wd10ezex-1tb-sata-iii-3-5-desktop-hard-drive-58.jpg",
-      "price": "43.99",
-      "node_locale" : "es"
-    }
+    "affiliation": "Acme Inc.",
+    "facebook": "https://www.facebook.com/johndoe",
+    "twitter": "@johndoe",
+    "linkedin": "https://www.linkedin.com/in/johndoe",
+    "github": "https://github.com/janedenoe",
+    "website": "https://janedenoe.com",
+    "country_origin": "Colombia",
+    "country_residence": "Canada"
+  }
 ]

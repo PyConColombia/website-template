@@ -1,0 +1,11 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "keynotes": "Invitados Internacionales",
+    "resources": "Recursos",
+    "schedule": "Cronograma",
+    "speakers": "Ponentes",
+    "talks": "Ponencias",
+    "team": "Equipo"
+  }
+}
