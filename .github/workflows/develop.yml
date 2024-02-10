@@ -3,10 +3,10 @@ name: Staging Checks
 on:
   push:
     branches:
-      - dev
+      - develop
   pull_request:
     branches:
-      - dev
+      - develop
 
 jobs:
   format-js:
@@ -21,14 +21,14 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v1
         with:
-          node-version: "14.16"
+          node-version: '20.11'
       - name: Cache NPM
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-14.16-${{ hashFiles('pycon-website-template/package.json') }}
+          key: ${{ runner.os }}-node-20.11-${{ hashFiles('pycon-website-template/package.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-14.16-${{ hashFiles('pycon-website-template/package.json') }}
+            ${{ runner.os }}-node-20.11-
       - name: Install node dependencies
         run: |
           cd pycon-website-template/
