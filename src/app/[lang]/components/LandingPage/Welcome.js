@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
 
 const Welcome = () => {
@@ -38,14 +38,25 @@ const Welcome = () => {
                 </Col>
               </Row>
               <Row>
-                <Col xs={12} md={4}>
-                  {/* <div className="button-container">
-                    <Button className="btn btn-primary btn-welcome">Get your tickets</Button>
-                  </div> */}
+                <Col xs={12} md={8}>
+                  <div className="button-container">
+                    <Button
+                      className="btn btn-primary btn-welcome"
+                      href="https://www.eventbrite.com/e/pycon-colombia-2024-tickets-824751864027"
+                      target="_blank">
+                      Get your tickets
+                    </Button>
+                  </div>
                 </Col>
-                <Col xs={12} md={4}></Col>
                 <Col xs={12} md={4}>
-                  <div className="icons-container"></div>
+                  <div className="icons-container">
+                    <Image
+                      src="/images/welcome-icons.svg"
+                      alt="Welcome Icons"
+                      width={300}
+                      height={300}
+                    />
+                  </div>
                 </Col>
               </Row>
             </Col>

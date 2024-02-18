@@ -14,7 +14,9 @@ const CallSpeakers = () => {
           <Container>
             <Row className="justify-content-center">
               <Col xs={12} md={2} lg={2} className="d-none d-sm-none d-lg-block">
-                <Image src="/images/megaphone.webp" width={300} height={300} className="logo" />
+                <div className="icon">
+                  <Image src="/images/megaphone.webp" width={300} height={300} className="logo" />
+                </div>
               </Col>
               <Col xs={12} md={6} lg={5}>
                 <div className="text">

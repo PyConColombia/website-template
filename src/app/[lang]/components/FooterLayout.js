@@ -14,7 +14,7 @@ import {
   faGithubAlt
 } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
-import ModalDocFooter from './modal/ModalDoc';
+// import ModalDocFooter from './modal/ModalDoc';
 import ModalCodeOfConduct from './modal/ModalCodeOfConduct';
 import ModalCodeOfConductE from './modal/ModalCodeOfConductE';
 import HealthPolicy from './modal/HealhPolicy';
@@ -27,44 +27,44 @@ const FooterLayout = () => {
   const handleShowCodeE = () => setShowCodeE(!showCodeE);
   const handleShowHealthPolicy = () => setShowHealthPolicy(!showHealthPolicy);
 
-  const docsUrlLegal = [
-    {
-      name: 'Acta de constitución',
-      url: 'https://drive.google.com/file/d/1Xtwy38BR6d0CTDZoYYvizop-JdIIGfuA/preview'
-    },
-    {
-      name: 'Renovación ESAL',
-      url: 'https://drive.google.com/file/d/1rgCZNkkVJWxWy9e5iUS3rZGEW1jVYMHH/preview'
-    },
-    {
-      name: 'Rut',
-      url: 'https://drive.google.com/file/d/1p2CAwGxSXsH9kg5GgMav29_QkmAhNQ6V/preview'
-    },
-    {
-      name: 'Cámara de comercio',
-      url: 'https://drive.google.com/file/d/1DZfYrftzffmNBLpJDQgp7xXgbfQlcDLN/preview'
-    },
-    {
-      name: 'Estatutos',
-      url: 'https://drive.google.com/file/d/1znErsdiiKNr9ct2qN_d_kYhsSCJdE3rD/preview'
-    },
-    {
-      name: 'Certificación DIAN 2023',
-      url: 'https://drive.google.com/file/d/1x525xP9tmu6WXSQi7y0VlJc6kZEIfgca/preview'
-    },
-    {
-      name: 'Fundadores PyCon',
-      url: 'https://drive.google.com/file/d/1jOhE7B7KscOA_eE5jm5pzLxmagy5zvoC/preview'
-    },
-    {
-      name: 'Cargos gerenciales',
-      url: 'https://drive.google.com/file/d/1QJrN5_J3N7ZVhgE0g0ioyv8uIJ51HbOX/preview'
-    },
-    {
-      name: 'Donantes',
-      url: 'https://drive.google.com/file/d/1VL7ruPPVTteir3-L-QM9lTo2OFEDyNFO/preview'
-    }
-  ];
+  // const docsUrlLegal = [
+  //   {
+  //     name: 'Acta de constitución',
+  //     url: 'https://drive.google.com/file/d/1Xtwy38BR6d0CTDZoYYvizop-JdIIGfuA/preview'
+  //   },
+  //   {
+  //     name: 'Renovación ESAL',
+  //     url: 'https://drive.google.com/file/d/1rgCZNkkVJWxWy9e5iUS3rZGEW1jVYMHH/preview'
+  //   },
+  //   {
+  //     name: 'Rut',
+  //     url: 'https://drive.google.com/file/d/1p2CAwGxSXsH9kg5GgMav29_QkmAhNQ6V/preview'
+  //   },
+  //   {
+  //     name: 'Cámara de comercio',
+  //     url: 'https://drive.google.com/file/d/1DZfYrftzffmNBLpJDQgp7xXgbfQlcDLN/preview'
+  //   },
+  //   {
+  //     name: 'Estatutos',
+  //     url: 'https://drive.google.com/file/d/1znErsdiiKNr9ct2qN_d_kYhsSCJdE3rD/preview'
+  //   },
+  //   {
+  //     name: 'Certificación DIAN 2023',
+  //     url: 'https://drive.google.com/file/d/1x525xP9tmu6WXSQi7y0VlJc6kZEIfgca/preview'
+  //   },
+  //   {
+  //     name: 'Fundadores PyCon',
+  //     url: 'https://drive.google.com/file/d/1jOhE7B7KscOA_eE5jm5pzLxmagy5zvoC/preview'
+  //   },
+  //   {
+  //     name: 'Cargos gerenciales',
+  //     url: 'https://drive.google.com/file/d/1QJrN5_J3N7ZVhgE0g0ioyv8uIJ51HbOX/preview'
+  //   },
+  //   {
+  //     name: 'Donantes',
+  //     url: 'https://drive.google.com/file/d/1VL7ruPPVTteir3-L-QM9lTo2OFEDyNFO/preview'
+  //   }
+  // ];
 
   return (
     <footer id="footer">
@@ -81,7 +81,7 @@ const FooterLayout = () => {
                 />
               </div>
             </Col>
-            <Col xs={12} md={6} lg={3} className="footer-column">
+            {/* <Col xs={12} md={6} lg={3} className="footer-column">
               <div className="footer-label">Legales</div>
               <div className="footer-separator"></div>
               <ul>
@@ -91,7 +91,7 @@ const FooterLayout = () => {
                   </li>
                 ))}
               </ul>
-            </Col>
+            </Col> */}
             <Col xs={12} md={6} lg={4} className="footer-column">
               <div>Otros</div>
               <div className="footer-separator"></div>

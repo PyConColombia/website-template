@@ -1,22 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import CallSpeakers from '@/app/[lang]/components/commons/CallSpeakers';
-import Title from '@/app/[lang]/components/commons/Title';
+import Title from './components/Title';
+import Content from './components/Content';
 
-const CallForProposals = ({ params: { lang } }) => {
+const callForProposals = () => {
   return (
     <>
       <Title />
+      <Content />
       <CallSpeakers />
     </>
   );
 };
 
-CallForProposals.propTypes = {
-  params: PropTypes.shape({
-    lang: PropTypes.string.isRequired
-  }).isRequired
-};
-
-export default CallForProposals;
+export default callForProposals;
